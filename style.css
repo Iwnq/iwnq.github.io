@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    background-image: url('background.png');
+    background-repeat: repeat;
+    color: #212121
+}
+
+#blokconfetti{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.4);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.confetti {
+    animation: bounceIn 0.5s;
+}
+
+h1{
+    margin: 0px;
+}
+
+#zdjecie{
+    height: 250px;
+    width: 250px;
+    box-shadow: 10px 10px 10px rgb(66, 43, 61);
+    margin: 20px;
+}
+
+#pytanie{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 64px;
+    font-size: 36px;
+}
+
+#shy{
+    margin: 5px;
+    height: 64px;
+    width: 64px;
+}
+
+#przyciski{
+    margin: 10px;
+}
+
+button{
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  outline: none;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover{
+  background-color: #F082AC;
+}
