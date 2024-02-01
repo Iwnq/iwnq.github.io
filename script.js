@@ -5,6 +5,9 @@ function nie() {
     } else {
         console.log('Nie znaleziono elementu o id "tekst".');
     }
+	//vineboom
+	var audio1 = new Audio('vineboom.mp3');
+    audio1.play();
 }
 
 function tak() {
@@ -16,8 +19,8 @@ function tak() {
     }
     //confetti
     var confettiElement = document.getElementById('blokconfetti');
-    var emojis = ["💋", "😎", "💖", "💕"];
-    for (let i = 0; i < 150; i++) {
+    var emojis = ["💋", "😎", "💖", "💕", "🌹"];
+    for (let i = 0; i < 170; i++) {
         let confetti = document.createElement('div');
         confetti.innerText = emojis[Math.floor(Math.random() * emojis.length)];
         confetti.style.fontSize = Math.floor(Math.random() * 36) + 'px';
@@ -29,17 +32,22 @@ function tak() {
         confetti.className = 'confetti bounceIn';
         confettiElement.appendChild(confetti);
 
-        // Dodajemy animację opadania za pomocą JavaScript
         var start = Date.now();
         var interval = setInterval(function() {
             var elapsed = Date.now() - start;
             confetti.style.top = Math.min(window.innerHeight, parseInt(confetti.style.top) + elapsed / 100) + 'px';
-            if (elapsed > 2000) { // Po 2 sekundach usuwamy confetti
+            if (elapsed > 2000) {
                 confetti.remove();
                 clearInterval(interval);
             }
         }, 20);
     }
+	//yippee
+	var audio2 = new Audio('yippee.mp3');
+    audio2.play();
+    //confetti
+	var audio3 = new Audio('confetti.mp3');
+    audio3.play();
 }
 
 
