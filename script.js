@@ -20,7 +20,7 @@ function tak() {
     for (let i = 0; i < 150; i++) {
         let confetti = document.createElement('div');
         confetti.innerText = emojis[Math.floor(Math.random() * emojis.length)];
-        confetti.style.fontSize = Math.floor(Math.random() * 30) + 'px';
+        confetti.style.fontSize = Math.floor(Math.random() * 36) + 'px';
         confetti.style.position = 'absolute';
         confetti.style.zIndex = '9999';
         confetti.style.left = Math.random() * window.innerWidth + 'px';
